@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Unit Converter</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="converter-card">
+
+            <div class="header">
+                <div class="icon">⚖️</div>
+
+                <h1>Unit Converter</h1>
+
+                <p>
+                    Convert length and weight units quickly and easily.
+                </p>
+            </div>
+
+
+            <!-- Input -->
+            <div class="input-group">
+
+                <label for="value">Enter Value</label>
+
+                <input
+                    type="number"
+                    id="value"
+                    placeholder="Enter a value"
+                    step="any"
+                >
+
+            </div>
+
+
+            <!-- Unit Selection -->
+            <div class="unit-section">
+
+                <div class="input-group">
+
+                    <label for="fromUnit">From</label>
+
+                    <select id="fromUnit">
+
+                        <optgroup label="Length">
+                            <option value="meter">Meter</option>
+                            <option value="kilometer">Kilometer</option>
+                            <option value="centimeter">Centimeter</option>
+                            <option value="feet">Feet</option>
+                            <option value="inch">Inch</option>
+                            <option value="mile">Mile</option>
+                        </optgroup>
+
+                        <optgroup label="Weight">
+                            <option value="kilogram">Kilogram</option>
+                            <option value="gram">Gram</option>
+                            <option value="pound">Pound</option>
+                            <option value="ounce">Ounce</option>
+                        </optgroup>
+
+                    </select>
+
+                </div>
+
+
+                <button id="swapBtn" class="swap-btn" title="Swap Units">
+                    ⇄
+                </button>
+
+
+                <div class="input-group">
+
+                    <label for="toUnit">To</label>
+
+                    <select id="toUnit">
+
+                        <optgroup label="Length">
+                            <option value="feet">Feet</option>
+                            <option value="meter">Meter</option>
+                            <option value="kilometer">Kilometer</option>
+                            <option value="centimeter">Centimeter</option>
+                            <option value="inch">Inch</option>
+                            <option value="mile">Mile</option>
+                        </optgroup>
+
+                        <optgroup label="Weight">
+                            <option value="kilogram">Kilogram</option>
+                            <option value="gram">Gram</option>
+                            <option value="pound">Pound</option>
+                            <option value="ounce">Ounce</option>
+                        </optgroup>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <!-- Result -->
+            <div class="result-box">
+
+                <p>Converted Result</p>
+
+                <h2 id="result">0</h2>
+
+                <span id="resultUnit">Feet</span>
+
+            </div>
+
+
+            <!-- Error -->
+            <p id="error"></p>
+
+
+            <button id="clearBtn" class="clear-btn">
+                Clear
+            </button>
+
+        </div>
+
+
+        <footer>
+            <p>Built with HTML, CSS & JavaScript</p>
+        </footer>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
